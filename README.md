@@ -57,5 +57,5 @@ Je l’utilise depuis quelques semaines. Je viens de replaquer une sauvegarde su
 Et tout fonctionne nickel :grinning:
 
 -----
-[Source : https://community.gladysassistant.com/t/automatiser-la-sauvegarde-de-la-carte-sd/2835]
+[Source] : https://community.gladysassistant.com/t/automatiser-la-sauvegarde-de-la-carte-sd/2835
 -----
