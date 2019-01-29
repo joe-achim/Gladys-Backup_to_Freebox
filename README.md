@@ -1,6 +1,5 @@
 # Gladys-Backup_to_Freebox
 
-
 Bonjour à tous,
 
 j’ai vu qu’un certain nombre de personnes se demandaient comment sauvegarder leur carte SD.
@@ -17,25 +16,25 @@ Et en cherchant un peu j’ai trouvé une autre méthode (copie de/dev/mmcblk0) 
 
 - accéder à gladys en ssh (ssh pi@192.168.xxx.xxx)
 
-- modifier le fstab (''sudo nano /etc/fstab'')
+- modifier le fstab (```sudo nano /etc/fstab```)
 
 Ajouter le partage, le NAS, par exemple la freebox
-''//192.168.0.254/Disque\040dur/ /media/freebox cifs netdev,rw,users,iocharset=utf8,uid=1000,sec=none,file_mode=0777,dir_mode=0777 0 3''
+```//192.168.0.254/Disque\040dur/ /media/freebox cifs netdev,rw,users,iocharset=utf8,uid=1000,sec=none,file_mode=0777,dir_mode=0777 0 3```
 
 Créer le répertoire sur le rpi sur lequel on a lié le NAS
-''sudo mkdir -p /media/freebox''
+```sudo mkdir -p /media/freebox```
 et installer les paquets **cifs-utils** et **samba-common**
 
-''sudo mount -a''
+```sudo mount -a```
 
 Créer un répertoire pour vos scripts
-''sudo mkdir -p /home/pi/scripts''
+```sudo mkdir -p /home/pi/scripts```
 
 Ajouter le script de sauvegarde
-''sudo nano /home/pi/scripts/sauvegarde.sh''
+```sudo nano /home/pi/scripts/sauvegarde.sh```
 
 Exemple de script bash :
-''
+```
 #!/bin/bash
 datejour=$(date +'%Y%m%d')
 #SAUVEGARDE CARTE SD GLADYS
@@ -46,11 +45,17 @@ Modifier les droits des répertoires et rendre script exécutable
 sudo chown -Rf pi: /home/pi/scripts
 sudo chmod +x /home/pi/scripts/sauvegarde.sh
 sudo chown pi:4242 /media/freebox
-''
+```
 
-Créer le crontab pour lancer le script
-''sudo nano /etc/crontab''
-''00 23 * * * root cd /home/pi/scripts/sauvegarde/ && ./sauvegarde.sh''
+Créer le crontab pour lancer le script 
+```sudo nano /etc/crontab
+
+00 23 * * * root cd /home/pi/scripts/sauvegarde/ && ./sauvegarde.sh
+```
 
 Je l’utilise depuis quelques semaines. Je viens de replaquer une sauvegarde sur une nouvelle carte SD (gladys 3.8.0) et je viens de la passer en 3.8.1.
 Et tout fonctionne nickel :grinning:
+
+-----
+[Source : https://community.gladysassistant.com/t/automatiser-la-sauvegarde-de-la-carte-sd/2835]
+-----
