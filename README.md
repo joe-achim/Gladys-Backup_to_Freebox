@@ -59,3 +59,4 @@ Et tout fonctionne nickel :grinning:
 -----
 [Source] : https://community.gladysassistant.com/t/automatiser-la-sauvegarde-de-la-carte-sd/2835
 -----
+https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
