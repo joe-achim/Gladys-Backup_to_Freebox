@@ -65,4 +65,12 @@ D'autres idées :
 
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
 https://tech.korben.info/t/effacer-et-reinstaller-un-linux-via-ssh-sans-avoir-a-redemarrer/5522/5
+https://community.gladysassistant.com/t/sauvegarde-de-gladys/1364/26
+https://github.com/C4rlit0/gladys-backup
 https://www.youtube.com/watch?v=lT-30q_jmHQ
+
+https://www.debian.org/releases/stable/i386/apds03.html.en
+https://www.debian.org/releases/stable/i386/apds03.html.fr
+http://www.underhanded.org/papers/debian-conversion/remotedeb.html
+https://github.com/mhf-ir/ubuntu-overssh-reinstallation
+https://help.ubuntu.com/community/Grub2/ISOBoot
