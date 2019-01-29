@@ -59,4 +59,10 @@ Et tout fonctionne nickel :grinning:
 -----
 [Source] : https://community.gladysassistant.com/t/automatiser-la-sauvegarde-de-la-carte-sd/2835
 -----
+
+D'autres idées :
+================
+
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
+https://tech.korben.info/t/effacer-et-reinstaller-un-linux-via-ssh-sans-avoir-a-redemarrer/5522/5
+https://www.youtube.com/watch?v=lT-30q_jmHQ
